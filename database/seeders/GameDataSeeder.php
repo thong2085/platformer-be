@@ -13,18 +13,18 @@ class GameDataSeeder extends Seeder
     public function run(): void
     {
         $classes = [
-            ['name' => 'Knight Male', 'base_hp' => 100, 'base_speed' => 160, 'base_damage' => 10, 'sprite_key' => 'knight_m'],
-            ['name' => 'Knight Female', 'base_hp' => 95, 'base_speed' => 165, 'base_damage' => 10, 'sprite_key' => 'knight_f'],
-            ['name' => 'Elf Male', 'base_hp' => 80, 'base_speed' => 190, 'base_damage' => 12, 'sprite_key' => 'elf_m'],
-            ['name' => 'Elf Female', 'base_hp' => 75, 'base_speed' => 195, 'base_damage' => 12, 'sprite_key' => 'elf_f'],
-            ['name' => 'Wizard Male', 'base_hp' => 70, 'base_speed' => 150, 'base_damage' => 15, 'sprite_key' => 'wizzard_m'],
-            ['name' => 'Wizard Female', 'base_hp' => 65, 'base_speed' => 155, 'base_damage' => 15, 'sprite_key' => 'wizzard_f'],
-            ['name' => 'Lizard Male', 'base_hp' => 120, 'base_speed' => 140, 'base_damage' => 8, 'sprite_key' => 'lizard_m'],
-            ['name' => 'Lizard Female', 'base_hp' => 115, 'base_speed' => 145, 'base_damage' => 8, 'sprite_key' => 'lizard_f'],
-            ['name' => 'Dwarf Male', 'base_hp' => 150, 'base_speed' => 130, 'base_damage' => 14, 'sprite_key' => 'dwarf_m'],
-            ['name' => 'Dwarf Female', 'base_hp' => 140, 'base_speed' => 135, 'base_damage' => 13, 'sprite_key' => 'dwarf_f'],
-            ['name' => 'Plague Doctor', 'base_hp' => 90, 'base_speed' => 160, 'base_damage' => 11, 'sprite_key' => 'doc'],
-            ['name' => 'Angel', 'base_hp' => 110, 'base_speed' => 180, 'base_damage' => 12, 'sprite_key' => 'angel'],
+            ['name' => 'Knight Male', 'base_hp' => 100, 'base_speed' => 95, 'base_damage' => 10, 'sprite_key' => 'knight_m'],
+            ['name' => 'Knight Female', 'base_hp' => 95, 'base_speed' => 100, 'base_damage' => 10, 'sprite_key' => 'knight_f'],
+            ['name' => 'Elf Male', 'base_hp' => 80, 'base_speed' => 115, 'base_damage' => 12, 'sprite_key' => 'elf_m'],
+            ['name' => 'Elf Female', 'base_hp' => 75, 'base_speed' => 115, 'base_damage' => 12, 'sprite_key' => 'elf_f'],
+            ['name' => 'Wizard Male', 'base_hp' => 70, 'base_speed' => 90, 'base_damage' => 15, 'sprite_key' => 'wizzard_m'],
+            ['name' => 'Wizard Female', 'base_hp' => 65, 'base_speed' => 90, 'base_damage' => 15, 'sprite_key' => 'wizzard_f'],
+            ['name' => 'Lizard Male', 'base_hp' => 120, 'base_speed' => 85, 'base_damage' => 8, 'sprite_key' => 'lizard_m'],
+            ['name' => 'Lizard Female', 'base_hp' => 115, 'base_speed' => 85, 'base_damage' => 8, 'sprite_key' => 'lizard_f'],
+            ['name' => 'Dwarf Male', 'base_hp' => 150, 'base_speed' => 80, 'base_damage' => 14, 'sprite_key' => 'dwarf_m'],
+            ['name' => 'Dwarf Female', 'base_hp' => 140, 'base_speed' => 80, 'base_damage' => 13, 'sprite_key' => 'dwarf_f'],
+            ['name' => 'Plague Doctor', 'base_hp' => 90, 'base_speed' => 95, 'base_damage' => 11, 'sprite_key' => 'doc'],
+            ['name' => 'Angel', 'base_hp' => 110, 'base_speed' => 110, 'base_damage' => 12, 'sprite_key' => 'angel'],
         ];
         foreach ($classes as $c) CharacterClass::updateOrCreate(['name' => $c['name']], $c);
 
